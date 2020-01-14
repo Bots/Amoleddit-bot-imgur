@@ -32,7 +32,7 @@ Snooper = new snooper({
     api_requests_per_minuite: 60 // api requests will be spread out in order to play nicely with Reddit
 })
 
-Snooper.watcher.getPostWatcher('botsone') // blank argument or 'all' looks at the entire website
+Snooper.watcher.getPostWatcher('AmoledBackgrounds') // blank argument or 'all' looks at the entire website
     .on('post', function(post) {
         // comment is a object containing all comment data
         console.log(post)
