@@ -77,7 +77,7 @@ chokidar.watch('./pics/newestPost.jpg', {
             method: 'post',
             url: `https://api.imgur.com/3/gallery/image/${imageId}`,
             headers: {
-                'Authorization': process.env.IMGUR_ACCESS_TOKEN
+                'Authorization': `Bearer ${process.env.IMGUR_ACCESS_TOKEN}`
             },
             data: {
               title: imageTitle,
