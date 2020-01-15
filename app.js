@@ -67,7 +67,7 @@ chokidar.watch('./pics/newestPost.jpg', {
 
     // read the media
     var b64content = fs.readFileSync('./pics/newestPost.jpg', { encoding: 'base64' })
-    let description = `New post from /r/AmoledBackgrounds from user ${author}. Upvote the post here: www.reddit.com${permalink} #wallpapers #backgrounds #amoled`
+    let description = `New post from /r/AmoledBackgrounds from Reddit user /u/${author}. Upvote the post here: https://www.reddit.com${permalink} #wallpapers #backgrounds #amoled`
 
     imgur.uploadBase64(b64content, null, imageTitle, description)
     .then(function (json) {
